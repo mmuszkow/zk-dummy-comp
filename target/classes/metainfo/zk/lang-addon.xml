@@ -1,0 +1,32 @@
+<language-addon>
+    <addon-name>zkmine</addon-name>
+  	<version>
+		<version-class>org.zkoss.zk.zkmine.Version</version-class>
+		<version-uid>1.0</version-uid>
+		<zk-version>6.0.1</zk-version><!-- or later -->
+	</version>
+    
+	<language-name>xul/html</language-name>
+	<component>
+		<component-name>dummy</component-name> <!-- required -->
+		<component-class>org.zkoss.zk.zkmine.Dummy</component-class> <!-- required -->
+		<widget-class>zkmine.Dummy</widget-class> <!-- required -->
+		<mold>
+			<mold-name>default</mold-name>
+			<mold-uri>mold/dummy.js</mold-uri>
+
+			<!--
+			== Tip in advance ==
+				You don't have to specify a css.dsp if you need not ,
+				but usually you need it.
+
+				You could assign a .css file ,too.
+
+				The css.dsp is almost as same as CSS file ,
+				but have more powerful enhancement.	(like EL support.)
+			====
+			-->
+			<css-uri>css/dummy.css.dsp</css-uri>
+		</mold>
+	</component>
+</language-addon>
